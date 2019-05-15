@@ -8,27 +8,35 @@
     <title>Slack Text Art</title>
   </head>
   <body>
-    <h1><img src="./logo.jpeg" alt="" />Slack Text Art</h1>
-    <div class="step">
-      <h2>Step 1</h2>
-      <p>Add an emoji named <code>space</code> with a transparent squarte to your Slack team. You can <a href="./space.png" download>download it here</a>.
-    </div>
-    <div class="step horizontal">
-      <div class="wrapper">
-        <h2>Step 2</h2>
-        <p>Enter your text and symbol</p>
-        <label>Text <span>(only a-z and 0-9 characters supported)<span><input class="text" value="omg" /></label>
-        <label>Symbol <input class="char" value=":smile:" /></label>
-        <button>Create</button>
-      </div>
-      <div class="wrapper last">
-        <h2>Step 3</h2>
-        <p>Copy/paste the following on your Slack message. Make sure your Slack channel has a :space: emoji with a transparent square for this to work.</p>
-        <hr />
-        <textarea class="out"></textarea>
+    <header>
+      <h1><img src="./logo.jpeg" alt="" />Slack Text Art</h1>
+      <a href="https://slack.com/oauth/authorize?client_id=151367399060.623660048227&scope=commands"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" class="download"></a>
+    </header>
+    <main>
+      <p>
+        This is a Slack bot that lets you use text art using your Slack emojis. you can call it by doing <code>/textart [text string] [symbol]</code>. Just make sure to add the <code>space</code> emoji to your slack channel and install using the button on the top right. You can also use the form below to test what the bot would provide as an output.
+      </p>
 
+      <p>NOTE: This is a free service, so there is a possibility for the bot to timeout when you make a request. If this is the case, simply try again 😃</p>
+      <div class="step">
+        <h2>Step 1</h2>
+        <p>Add an emoji named <code>space</code> with a transparent square to your Slack team. You can <a href="./space.png" download>download it here</a>.
       </div>
-    </div>
+      <div class="step horizontal">
+        <div class="wrapper">
+          <h2>Step 2</h2>
+          <p>Enter your text and symbol</p>
+          <label>Text <span>(only a-z and 0-9 characters supported)<span><input class="text" value="my text" /></label>
+          <label>Symbol <input class="char" value=":smile:" /></label>
+          <button>Create</button>
+        </div>
+        <div class="wrapper last">
+          <h2>Step 3</h2>
+          <p>Copy/paste the following on your Slack message. Make sure your Slack channel has a :space: emoji with a transparent square for this to work.</p>
+          <textarea class="out"></textarea>
+        </div>
+      </div>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
