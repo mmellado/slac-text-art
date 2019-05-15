@@ -93,3 +93,16 @@ img {
   display: inline-block;
   margin-right: 15px;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+code {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 1px 2px;
+  color: red;
+}
