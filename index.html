@@ -8,7 +8,16 @@
     <title>Slack Text rt</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div class="wrapper">
+      <label>Text <span>(only a-z and 0-9 characters supported)<span><input class="text" value="omg" /></label>
+      <label>Symbol <input class="char" value=":smile:" /></label>
+      <button>Create</button>
+    </div>
+    <div class="wrapper last">
+      <p>Copy/paste the following on your Slack message. Make sure your Slack channel has a :space: emoji with a transparent square for this to work.</p>
+      <hr />
+      <textarea class="out"></textarea>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
